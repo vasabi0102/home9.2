@@ -1,0 +1,102 @@
+.wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+	border: 5px solid black;
+	padding: 50px;
+	background: gray;
+}
+body {
+	background: #2f4f4f;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 50px;
+	color: goldenrod;
+}
+header {
+	margin-bottom: 50px;
+}
+.game h2 {
+	font-size: 25px;
+	color: rgb(3, 54, 3);
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.game-line1 {
+	width: 20px;
+	height: 100px;
+	background: rgb(38, 0, 255);
+	border-radius: 10px;
+}
+
+.game-line2 {
+	visibility: hidden;
+	width: 100%;
+	height: 40px;
+	background: rgb(255, 251, 0);
+	border-radius: 10px;
+}
+.game-line1:hover + .game-line2,
+.game-line2:hover {
+	visibility: visible;
+}
+.game-line3 {
+	visibility: hidden;
+	width: 20px;
+	height: 100px;
+	background: blue;
+	margin: 0 0 0 auto;
+	border-radius: 10px;
+}
+.game-line2:hover + .game-line3,
+.game-line3:hover {
+	visibility: visible;
+}
+.game-line4 {
+	visibility: hidden;
+	width: 100%;
+	height: 40px;
+	background: rgb(255, 251, 0);
+	border-radius: 10px;
+}
+.game-line3:hover + .game-line4,
+.game-line4:hover {
+	visibility: visible;
+}
+.game-line5 {
+	visibility: hidden;
+	width: 20px;
+	height: 400px;
+	background: red;
+	border-radius: 10px;
+}
+.game-line4:hover + .game-line5,
+.game-line5:hover {
+	visibility: visible;
+}
+.game-line6 {
+	visibility: hidden;
+	width: 20px;
+	height: 20px;
+	background: blueviolet;
+	border-radius: 10px;
+}
+.game-line6:hover {
+	width: 100%;
+	height: 50px;
+}
+.game-line5:hover + .game-line6,
+.game-line6:hover {
+	visibility: visible;
+}
+.game-line7 {
+	visibility: hidden;
+	height: 800px;
+}
+.game-line6:hover + .game-line7,
+.game-line7:hover {
+	visibility: visible;
+	background: url("img/pic1.jpeg") 50% 0 no-repeat fixed;
+}
